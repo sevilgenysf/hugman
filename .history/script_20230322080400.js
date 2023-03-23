@@ -1,0 +1,1 @@
+const word_el = document.getElementById('word');
