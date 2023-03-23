@@ -73,9 +73,6 @@ playAgainBtn.addEventListener('click', () => {
 
 	selectedWord = getRandomWord();
 	displayWord();
-	updateWrongLetters();
-
-	popup.style.display = 'none';
 });
 
 window.addEventListener('keydown', function (e) {

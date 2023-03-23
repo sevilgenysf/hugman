@@ -13,7 +13,7 @@ function getRandomWord() {
 
 const correctLetters = [];
 const wrongLetters = [];
-let selectedWord = getRandomWord();
+const selectedWord = getRandomWord();
 
 function displayWord() {
 	word_el.innerHTML = `
@@ -72,10 +72,6 @@ playAgainBtn.addEventListener('click', () => {
 	wrongLetters.splice(0);
 
 	selectedWord = getRandomWord();
-	displayWord();
-	updateWrongLetters();
-
-	popup.style.display = 'none';
 });
 
 window.addEventListener('keydown', function (e) {
